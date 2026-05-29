@@ -53,7 +53,110 @@ document.querySelectorAll('.faq-item').forEach(item => {
   });
 });
 
-// ─── Particle canvas (hero only) ─────────────────────────
+// ─── Fluid dynamics animation behind logo ────────────────
+const fluidCanvas = document.getElementById('fluid-canvas');
+if (fluidCanvas) {
+  const fc = fluidCanvas.getContext('2d');
+  let fw, fh, ftime = 0;
+
+  function fluidResize() {
+    fw = fluidCanvas.width  = fluidCanvas.offsetWidth;
+    fh = fluidCanvas.height = fluidCanvas.offsetHeight;
+  }
+
+  // Streamlines — lines that follow a vortex velocity field
+  const STREAMS = 28;
+  const STEPS   = 60;
+  const streams = [];
+
+  function initStreams() {
+    streams.length = 0;
+    for (let i = 0; i < STREAMS; i++) {
+      const angle = (i / STREAMS) * Math.PI * 2;
+      const r = 20 + Math.random() * 80;
+      streams.push({
+        x: fw/2 + Math.cos(angle) * r,
+        y: fh/2 + Math.sin(angle) * r,
+        age: Math.random() * 200,
+        speed: 0.4 + Math.random() * 0.4,
+      });
+    }
+  }
+
+  // Velocity field: superposition of a central vortex + slight outward drift
+  function velocity(x, y, t) {
+    const cx = fw / 2, cy = fh / 2;
+    const dx = x - cx, dy = y - cy;
+    const r2 = dx*dx + dy*dy + 1;
+    const r  = Math.sqrt(r2);
+    const vortex  = 38 / r2;          // vortex strength
+    const drift   = 0.018;            // slow outward push
+    const wave    = Math.sin(t * 0.012 + r * 0.04) * 0.3;
+    return {
+      vx: -dy * vortex + dx * (drift + wave),
+      vy:  dx * vortex + dy * (drift + wave),
+    };
+  }
+
+  function drawFluid() {
+    fc.clearRect(0, 0, fw, fh);
+    ftime++;
+
+    for (const s of streams) {
+      s.age++;
+      // reset when too far from center or very old
+      const cx = fw/2, cy = fh/2;
+      const dist = Math.hypot(s.x - cx, s.y - cy);
+      if (dist > fw * 0.52 || s.age > 320) {
+        const angle = Math.random() * Math.PI * 2;
+        const r = 12 + Math.random() * 55;
+        s.x = cx + Math.cos(angle) * r;
+        s.y = cy + Math.sin(angle) * r;
+        s.age = 0;
+      }
+
+      // Draw trail
+      fc.beginPath();
+      let tx = s.x, ty = s.y;
+      fc.moveTo(tx, ty);
+      for (let k = 0; k < STEPS; k++) {
+        const { vx, vy } = velocity(tx, ty, ftime);
+        tx += vx * s.speed;
+        ty += vy * s.speed;
+        fc.lineTo(tx, ty);
+      }
+      const alpha = Math.max(0, 0.18 - dist / (fw * 3));
+      fc.strokeStyle = `rgba(78,155,184,${alpha})`;
+      fc.lineWidth   = 0.7;
+      fc.stroke();
+
+      // Advance particle
+      const { vx, vy } = velocity(s.x, s.y, ftime);
+      s.x += vx * s.speed;
+      s.y += vy * s.speed;
+    }
+
+    // Glowing rings
+    for (let ring = 1; ring <= 3; ring++) {
+      const phase  = ftime * 0.008 + ring * 1.2;
+      const radius = 40 + ring * 36 + Math.sin(phase) * 10;
+      const alpha  = 0.07 + Math.sin(phase) * 0.03;
+      fc.beginPath();
+      fc.arc(fw/2, fh/2, radius, 0, Math.PI * 2);
+      fc.strokeStyle = `rgba(78,155,184,${alpha})`;
+      fc.lineWidth   = 1;
+      fc.stroke();
+    }
+
+    requestAnimationFrame(drawFluid);
+  }
+
+  window.addEventListener('resize', () => { fluidResize(); initStreams(); });
+  fluidResize();
+  initStreams();
+  drawFluid();
+}
+
 const canvas = document.getElementById('particles-canvas');
 if (canvas) {
   const ctx = canvas.getContext('2d');
