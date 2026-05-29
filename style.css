@@ -690,21 +690,12 @@ section.tight { padding: 60px 0; }
   width: 280px;
   height: 280px;
 }
-#fluid-canvas {
-  position: absolute;
-  inset: -30px;
-  width: calc(100% + 60px);
-  height: calc(100% + 60px);
-  pointer-events: none;
-  z-index: 0;
-}
 .hero__logo-img {
   width: 200px;
   max-width: 100%;
   position: relative;
   z-index: 1;
   filter: drop-shadow(0 0 24px rgba(78,155,184,0.3));
-  animation: float 6s ease-in-out infinite;
 }
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
