@@ -697,10 +697,7 @@ section.tight { padding: 60px 0; }
   z-index: 1;
   filter: drop-shadow(0 0 24px rgba(78,155,184,0.3));
 }
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50%       { transform: translateY(-10px); }
-}
+
 @media (max-width: 900px) {
   .hero__grid {
     grid-template-columns: 1fr;
