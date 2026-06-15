@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gli Indicatori PhyStudy — PhyMap Trading</title>
+  <meta name="description" content="Tutti gli strumenti disponibili in PhyStudy: ADR, PhyMap Level, Cicli FIXED, VAR, VPhy, Convex, Delta G, Wayv e molto altro." />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .indicator-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .indicator-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      transition: border-color var(--transition), transform var(--transition);
+    }
+    .indicator-card:hover {
+      border-color: var(--border-accent);
+      transform: translateY(-4px);
+    }
+    .indicator-tag {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 100px;
+      margin-bottom: 14px;
+    }
+    .tag-volumetria { background: rgba(78,155,184,0.12); color: var(--accent); }
+    .tag-cicli      { background: rgba(201,168,124,0.12); color: var(--gold); }
+    .tag-opzioni    { background: rgba(130,100,200,0.12); color: #9B7FD4; }
+    .tag-tools      { background: rgba(80,180,120,0.12); color: #50B478; }
+    .indicator-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+    .indicator-card p {
+      font-size: 0.9rem;
+      line-height: 1.8;
+      color: var(--text-muted);
+    }
+    .indicator-card ul {
+      list-style: none;
+      margin-top: 12px;
+    }
+    .indicator-card ul li {
+      font-size: 0.86rem;
+      color: var(--text-dim);
+      padding: 5px 0;
+      padding-left: 14px;
+      position: relative;
+      border-bottom: 1px solid var(--border);
+    }
+    .indicator-card ul li:last-child { border-bottom: none; }
+    .indicator-card ul li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: 0.75rem;
+    }
+    .phystudy-img-wrap {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 40px;
+      text-align: center;
+    }
+    .phystudy-img-wrap img {
+      max-width: 320px;
+      margin: 0 auto;
+      border-radius: var(--radius-sm);
+    }
+    @media (max-width: 768px) {
+      .indicator-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <div class="logo-mark">PM</div>
+      Phy<span>Map</span> Trading
+    </a>
+    <div class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="su-di-noi.html">Su di noi</a>
+      <a href="il-metodo.html">Il metodo</a>
+      <a href="software-e-formazione.html">Software &amp; Formazione</a>
+      <a href="contatti.html" class="nav__cta">Contatti</a>
+    </div>
+    <button class="nav__toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══ PAGE HERO ═════════════════════════════════════════ -->
+<div class="page-hero">
+  <div class="glow-bg glow-1"></div>
+  <div class="container">
+    <div class="page-hero__label">PhyStudy Pro</div>
+    <h1 style="max-width:700px; margin-bottom:24px;">
+      Gli strumenti<br>dell'ecosistema <em>PhyMap</em>
+    </h1>
+    <p class="lead" style="max-width:580px;">
+      Ogni indicatore disponibile in PhyStudy nasce da anni di ricerca su prezzo, tempo e volume. Qui trovi una descrizione sintetica di ciascuno.
+    </p>
+  </div>
+</div>
+
+<!-- ═══ PHYSTUDY PANEL ════════════════════════════════════ -->
+<section class="tight">
+  <div class="container">
+    <div class="grid-2" style="gap:60px; align-items:center;">
+      <div class="reveal">
+        <div class="section-label">Il pannello di controllo</div>
+        <h2 class="section-title">PhyStudy Pro</h2>
+        <p style="margin-bottom:16px;">
+          PhyStudy Pro è l'interfaccia che raccoglie tutti gli strumenti PhyMap in un unico pannello. Installato su MT4, si connette ai server PhyMap e rende disponibili in tempo reale tutte le analisi con un semplice clic.
+        </p>
+        <p>
+          Ogni indicatore viene attivato singolarmente, permettendo di costruire la propria configurazione in base all'asset, al timeframe e allo stile operativo.
+        </p>
+        <div style="margin-top:28px;">
+          <a href="software-e-formazione.html" class="btn btn--primary">Scopri i piani licenza</a>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div class="phystudy-img-wrap">
+          <!-- Carica l'immagine del pannello PhyStudy su GitHub con il nome "phystudypro.png" -->
+          <img src="phystudypro.png" alt="Pannello PhyStudy Pro" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+          <div style="display:none; padding:40px 20px; color:var(--text-muted); font-size:0.85rem;">
+            Carica l'immagine del pannello PhyStudy su GitHub con il nome <strong style="color:var(--text);">phystudypro.png</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ═══ INDICATORS ════════════════════════════════════════ -->
+<section>
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom:60px;">
+      <div class="section-label">Strumenti disponibili</div>
+      <h2 class="section-title">Tutti gli indicatori</h2>
+      <p class="section-desc">
+        Una panoramica sintetica di ogni componente dell'ecosistema PhyStudy.
+      </p>
+    </div>
+
+    <div class="indicator-grid">
+
+      <!-- ADR Giornaliera -->
+      <div class="indicator-card reveal">
+        <div class="indicator-tag tag-volumetria">Volumetria · Struttura</div>
+        <div class="indicator-name">ADR Giornaliera</div>
+        <p>Le ADR (Aree di Reazione) sono zone chiave del grafico dove si sono verificati sbilanciamenti significativi tra domanda e offerta. Funzionano come supporti e resistenze dinamici e nel 70% dei casi il prezzo genera una reazione significativa al loro contatto.</p>
+        <ul>
+          <li>ADR Grigie/Bianche — alta densità, le più rilevanti</li>
+          <li>ADR Celesti — densità intermedia, reazioni minori</li>
+          <li>Inversione di ruolo automatica in caso di rottura</li>
+        </ul>
+      </div>
+
+      <!-- ADR Weekly -->
+      <div class="indicator-card reveal reveal-delay-1">
+        <div class="indicator-tag tag-volumetria">Volumetria · Settimanale</div>
+        <div class="indicator-name">ADR Weekly</div>
+        <p>Aree di reazione su base settimanale, tracciate ogni lunedì mattina in base agli sbilanciamenti della settimana precedente. Forniscono il contesto strutturale di medio termine e sono ideali per confluenze con le ADR giornaliere.</p>
+        <ul>
+          <li>Riferimento per swing trading e operatività multi-timeframe</li>
+          <li>Stessa logica delle ADR daily ma su scala settimanale</li>
+        </ul>
+      </div>
+
+      <!-- PhyMap Level -->
+      <div class="indicator-card reveal">
+        <div class="indicator-tag tag-opzioni">Opzioni · Intraday</div>
+        <div class="indicator-name">PhyMap Level</div>
+        <p>Livelli di espansione probabile del prezzo calcolati in tempo reale sulla base della volumetria in opzioni dell'S&P 500. Nel 90% dei casi il prezzo raggiunge almeno uno dei due estremi della proiezione giornaliera.</p>
+        <ul>
+          <li>6 livelli principali (3 superiori + 3 inferiori)</li>
+          <li>6 livelli secondari dinamici numerati per peso volumetrico</li>
+          <li>Espansione/contrazione segnala variazione di volatilità attesa</li>
+        </ul>
+      </div>
+
+      <!-- Cicli FIXED -->
+      <div class="indicator-card reveal reveal-delay-1">
+        <div class="indicator-tag tag-cicli">Ciclica · Temporale</div>
+        <div class="indicator-name">Cicli FIXED</div>
+        <p>Sistema proprietario che individua i punti di curvatura temporale (massimi e minimi ciclici) su base daily e mensile. Lavora con strutture temporali predefinite rappresentate da triangoli (punti di inversione) e barre intermedie (metà ciclo).</p>
+        <ul>
+          <li>Triangolo = zona di inversione ciclica attesa</li>
+          <li>Ciclo regolare vs ciclo lungo: diversa intensità di movimento</li>
+          <li>Allineamenti IPC e TSH gestiti automaticamente dal software</li>
+        </ul>
+      </div>
+
+      <!-- Livelli mensili OPT -->
+      <div class="indicator-card reveal">
+        <div class="indicator-tag tag-opzioni">Opzioni · Mensile</div>
+        <div class="indicator-name">Livelli mensili OPT</div>
+        <p>Mappatura degli strike mensili delle opzioni su tutti i principali asset. Ogni livello mostra i contratti netti aperti, aggregati in un volume profile orizzontale aggiornato giornalmente, che rivela il posizionamento istituzionale nel lungo periodo.</p>
+        <ul>
+          <li>Copertura su: EUR, S&P 500, SPY, SPX, Gold, DAX, NASDAQ</li>
+          <li>Aggiornamento giornaliero dello spread CFD–Opzioni</li>
+        </ul>
+      </div>
+
+      <!-- Indicatore VAR -->
+      <div class="indicator-card reveal reveal-delay-1">
+        <div class="indicator-tag tag-opzioni">Opzioni · Flussi</div>
+        <div class="indicator-name">Indicatore VAR</div>
+        <p>Monitora i cambiamenti più significativi nei livelli mensili delle opzioni, tracciando l'evoluzione delle posizioni nel corso del contratto. Funziona come un sensore di attività istituzionale: segnala quando un livello inizia a "pesare" davvero per il mercato.</p>
+        <ul>
+          <li>Attivo su tutte le opzioni mensili S&P 500</li>
+          <li>Rileva accumulo e scarico di posizioni importanti</li>
+        </ul>
+      </div>
+
+      <!-- VPhy -->
+      <div class="indicator-card reveal">
+        <div class="indicator-tag tag-volumetria">Volumetria · Microstruttura</div>
+        <div class="indicator-name">VPhy</div>
+        <p>Volume Profile proprietario che individua aree di densità invece di singoli punti. Fa per la microstruttura intraday ciò che le ADR fanno per i cicli giornalieri: mostra dove si concentra la liquidità nel breve termine.</p>
+        <ul>
+          <li>Aree rosse — massima densità di scambio</li>
+          <li>Aree blu — densità intermedia</li>
+          <li>Aree verdi — volumi più recenti per orario</li>
+        </ul>
+      </div>
+
+      <!-- Volume Profile 0DTE -->
+      <div class="indicator-card reveal reveal-delay-1">
+        <div class="indicator-tag tag-opzioni">Opzioni · 0DTE</div>
+        <div class="indicator-name">Volume Profile 0DTE</div>
+        <p>Mostra l'evoluzione in tempo reale dei volumi sulle opzioni 0DTE Futures (scadenza giornaliera) dell'S&P 500. I livelli di strike con maggiore concentrazione di scambi tendono a diventare punti di reazione, stop o accelerazione per il prezzo intraday.</p>
+        <ul>
+          <li>Aggiornamento in tempo reale durante la sessione</li>
+          <li>Riflette l'azione di copertura dei market maker</li>
+        </ul>
+      </div>
+
+      <!-- Unusual Options -->
+      <div class="indicator-card reveal">
+        <div class="indicator-tag tag-opzioni">Opzioni · Anomalie</div>
+        <div class="indicator-name">Unusual Options</div>
+        <p>Rileva movimenti anomali nel mercato delle opzioni: scambi molto superiori alla media o concentrati su specifici strike. Segnalano posizionamenti significativi di operatori importanti e aiutano a capire dove si sta muovendo il capitale "grande".</p>
+        <ul>
+          <li>Monitora opzioni 0DTE, settimanali e mensili</li>
+          <li>Visibili nei primi 45 minuti dalla comparsa</li>
+          <li>Non sono segnali operativi diretti, ma contesto di flusso</li>
+        </ul>
+      </div>
+
+      <!-- Convex -->
+      <div class="indicator-card reveal reveal-delay-1">
+        <div class="indicator-tag tag-opzioni">Opzioni · Equilibrio</div>
+        <div class="indicator-name">Convex</div>
+        <p>Analizza l'intera volumetria delle opzioni e calcola la distribuzione del rischio giornaliera, individuando un punto di equilibrio (freccia gialla) e le aree di maggiore attrazione per il prezzo (frecce rosse e verdi). Integrato con i PhyMap Level, chiarisce la direzione probabile dell'espansione.</p>
+        <ul>
+          <li>Al di sotto del punto di equilibrio → pressione ribassista favorita</li>
+          <li>Al di sopra → pressione rialzista favorita</li>
+        </ul>
+      </div>
+
+      <!-- Delta G -->
+      <div class="indicator-card reveal">
+        <div class="indicator-tag tag-opzioni">Opzioni · Gamma</div>
+        <div class="indicator-name">Delta G</div>
+        <p>Analizza il flusso delle coperture obbligatorie legate al gamma delle opzioni 0DTE. Permette di visualizzare la pressione matematica esercitata sul sottostante e, integrato con gli altri strumenti volumetrici, conferma con maggiore precisione i livelli di interesse.</p>
+        <ul>
+          <li>Evidenzia la componente di hedging automatico dei market maker</li>
+          <li>Migliore se usato in confluenza con ADR e PhyMap Level</li>
+        </ul>
+      </div>
+
+      <!-- Wayv -->
+      <div class="indicator-card reveal reveal-delay-1">
+        <div class="indicator-tag tag-tools">Visualizzazione</div>
+        <div class="indicator-name">Wayv</div>
+        <p>Una nuova forma di candela ispirata alla fisica ondulatoria. Converte l'intera escursione di prezzo in corpo direzionale puro, eliminando il rumore visivo e rendendo immediata la lettura della pressione direzionale. Il movimento diventa flusso netto, ogni candela diventa onda.</p>
+        <ul>
+          <li>Candela C — ottimizzata per la struttura ciclica del prezzo</li>
+          <li>Candela R — focalizzata sulla forza e direzione del movimento</li>
+        </ul>
+      </div>
+
+      <!-- PhyMap HeartBeat -->
+      <div class="indicator-card reveal">
+        <div class="indicator-tag tag-tools">Gestione · Licenze</div>
+        <div class="indicator-name">PhyMap HeartBeat</div>
+        <p>Il software che gestisce le licenze e il funzionamento di tutti gli indicatori rilasciati. Include una sezione di messaggistica interna per comunicazioni e aggiornamenti. In prospettiva, diventerà il centro di controllo dell'intera infrastruttura PhyMap.</p>
+        <ul>
+          <li>Verifica e attivazione della licenza sul conto MT4</li>
+          <li>Ricezione aggiornamenti e messaggi dal team PhyMap</li>
+        </ul>
+      </div>
+
+      <!-- PhyTools -->
+      <div class="indicator-card reveal reveal-delay-1">
+        <div class="indicator-tag tag-tools">Operatività · Alert</div>
+        <div class="indicator-name">PhyTools</div>
+        <p>Il pannello operativo che completa l'ecosistema. Permette di calcolare Risk/Reward e size ottimale in tempo reale, e di ricevere alert automatici sul cellulare quando il prezzo raggiunge i livelli PhyMap più importanti, come ADR o PhyMap Level per l'S&P 500.</p>
+        <ul>
+          <li>Calcolatore R/R con ratio 1:1, 1:2, 1:3</li>
+          <li>Calcolo automatico della size in lotti</li>
+          <li>Alert su mobile ai livelli chiave PhyMap</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA ════════════════════════════════════════════════ -->
+<section class="tight">
+  <div class="container">
+    <div class="highlight-box text-center reveal" style="padding:60px;">
+      <div class="section-label" style="justify-content:center; margin-bottom:16px;">Vuoi accedere a questi strumenti?</div>
+      <h2 style="margin-bottom:16px;">Scegli il piano<br>più adatto a te</h2>
+      <p style="max-width:440px; margin:0 auto 36px;">
+        Dalla licenza trimestrale al Master PhyMap: ogni percorso include l'accesso agli strumenti descritti in questa pagina.
+      </p>
+      <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+        <a href="software-e-formazione.html" class="btn btn--primary">Vedi i piani</a>
+        <a href="contatti.html" class="btn btn--outline">Scrivici</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <h3>Phy<span>Map</span> Trading</h3>
+        <p>La fluidodinamica applicata ai mercati finanziari. Un approccio diverso, basato su liquidità, tempo e volume.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Navigazione</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="su-di-noi.html">Su di noi</a></li>
+          <li><a href="il-metodo.html">Il metodo</a></li>
+          <li><a href="software-e-formazione.html">Software &amp; Formazione</a></li>
+          <li><a href="phystudy-indicatori.html">Gli indicatori</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Social</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/phymaptrad/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://discord.gg/KTteTnSdq5" target="_blank" rel="noopener">Discord</a></li>
+          <li><a href="https://t.me/phymap" target="_blank" rel="noopener">Telegram</a></li>
+          <li><a href="https://www.youtube.com/@aldophymaptrading/videos" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Legale</h4>
+        <ul>
+          <li><a href="informazioni-legali.html">Informazioni legali</a></li>
+          <li><a href="dichiarazione-privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__copy">© 2025 <span>PhyMap Trading</span> — Gesualdo Landolina, P.IVA IT07421950820</div>
+      <div class="footer__legal">
+        <a href="informazioni-legali.html">Informazioni legali</a>
+        <a href="dichiarazione-privacy.html">Privacy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
