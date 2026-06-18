@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Il Trader Imperfetto — PhyMap Trading</title>
+  <meta name="description" content="La serie di libri gratuiti 'Il Trader Imperfetto' di Aldo. Richiedi gratuitamente la tua copia in PDF via email." />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .book-section {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 56px;
+      align-items: start;
+      padding: 56px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .book-section:last-child { border-bottom: none; }
+    .book-cover-wrap {
+      position: relative;
+    }
+    .book-cover-wrap img {
+      width: 100%;
+      border-radius: var(--radius-sm);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.5);
+    }
+    .book-cover-fallback {
+      width: 100%;
+      aspect-ratio: 2/3;
+      background: var(--surface);
+      border: 1px dashed var(--border-accent);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+    .book-vol-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: var(--gold-dim);
+      padding: 4px 12px;
+      border-radius: 100px;
+      margin-bottom: 14px;
+    }
+    .book-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.9rem;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 18px;
+      line-height: 1.2;
+    }
+    .book-premise {
+      font-size: 0.94rem;
+      color: var(--text-dim);
+      line-height: 1.85;
+      margin-bottom: 28px;
+      white-space: pre-line;
+    }
+    @media (max-width: 768px) {
+      .book-section { grid-template-columns: 1fr; gap: 28px; }
+      .book-cover-wrap { max-width: 200px; margin: 0 auto; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <div class="logo-mark">PM</div>
+      Phy<span>Map</span> Trading
+    </a>
+    <div class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="su-di-noi.html">Su di noi</a>
+      <a href="il-metodo.html">Il metodo</a>
+      <a href="software-e-formazione.html">Software &amp; Formazione</a>
+      <a href="phystudy-indicatori.html">Gli indicatori</a>
+      <a href="contatti.html" class="nav__cta">Contatti</a>
+    </div>
+    <button class="nav__toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══ PAGE HERO ═════════════════════════════════════════ -->
+<div class="page-hero">
+  <div class="glow-bg glow-1"></div>
+  <div class="container">
+    <div class="page-hero__label">PhyStudy</div>
+    <h1 style="max-width:680px; margin-bottom:24px;">
+      Il <em>Trader</em><br>Imperfetto
+    </h1>
+    <p class="lead" style="max-width:600px;">
+      Una storia che va oltre il trading: un viaggio tra errori, emozioni e consapevolezza, scritto da Aldo.
+    </p>
+  </div>
+</div>
+
+<!-- ═══ INTRO ═════════════════════════════════════════════ -->
+<section class="tight">
+  <div class="container container--narrow">
+    <div class="reveal">
+      <div class="section-label">Introduzione</div>
+      <p style="margin-bottom:20px;">
+        Per offrire una comprensione approfondita delle dinamiche di una delle attività più complesse, il trading, e per mostrare il lavoro alla base del progetto PhyMap, mettiamo a disposizione gratuitamente i libri della serie <strong style="color:var(--text);">"Il Trader Imperfetto"</strong>, scritti da Aldo.
+      </p>
+      <p>
+        "Il Trader Imperfetto" è una storia che va oltre il trading: un viaggio tra errori, emozioni e consapevolezza. Attraverso le esperienze di un trader immaginario, il libro esplora il lato più difficile dei mercati, la mente, mostrando come paure, impulsi e convinzioni possano fare la differenza tra fallimento e crescita. Una guida narrativa per chi vuole capire davvero cosa significa fare trading… partendo da sé stessi.
+      </p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ═══ HOW TO REQUEST ════════════════════════════════════ -->
+<section class="tight">
+  <div class="container">
+    <div class="highlight-box text-center reveal" style="padding:48px;">
+      <div class="section-label" style="justify-content:center; margin-bottom:16px;">Come ricevere i libri</div>
+      <h3 style="margin-bottom:16px;">Richiedi gratuitamente la tua copia</h3>
+      <p style="max-width:520px; margin:0 auto 28px;">
+        Scrivi un'email indicando il volume che desideri ricevere: ti verrà inviata gratuitamente la copia in formato PDF.
+      </p>
+      <a href="mailto:phymap@protonmail.com?subject=Richiesta%20libro%20-%20Il%20Trader%20Imperfetto" class="contact-email">
+        phymap@protonmail.com
+      </a>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ═══ BOOKS ═════════════════════════════════════════════ -->
+<section>
+  <div class="container">
+
+    <!-- Volume 1 -->
+    <div class="book-section reveal">
+      <div class="book-cover-wrap">
+        <img src="copertina-vol1.jpg" alt="Il Trader Imperfetto - Volume 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="book-cover-fallback" style="display:none;">
+          Carica la copertina su GitHub con il nome<br><strong style="color:var(--text); margin-top:6px; display:block;">copertina-vol1.jpg</strong>
+        </div>
+      </div>
+      <div>
+        <div class="book-vol-tag">Volume 1</div>
+        <h3 class="book-title">La battaglia interiore</h3>
+        <div class="book-premise">Nel trading si dice spesso che la psicologia sia la parte più importante, ma quasi sempre viene affrontata in modo superficiale. Gli aspetti davvero cruciali, quelli che fanno la differenza quando si è davanti ai mercati, raramente vengono trattati a fondo.
+
+Dopo oltre quindici anni di esperienza, incontri e confronti con tanti trader, e studi dedicati alla mente e alle sue dinamiche, ho sentito l'esigenza di raccogliere tutto questo percorso in una forma nuova. Non un manuale tecnico, né un saggio teorico, ma un racconto capace di racchiudere errori, paure, cadute e rinascite che ogni trader, in modi diversi, conosce bene.
+
+Per dare vita a questa narrazione ho scelto un approccio particolare: affidare le mie tracce e riflessioni a un'intelligenza artificiale, che mi ha aiutato a trasformarle nella biografia di un trader immaginario. Un personaggio che non esiste, ma che porta in sé frammenti reali di vissuto, storie condivise e lezioni apprese sul campo.
+
+Questo libro è dunque il risultato di un intreccio tra esperienza diretta e narrazione creativa, con un unico obiettivo: esplorare a fondo la dimensione psicologica del trading, quella che spesso rimane invisibile, ma che in realtà muove ogni scelta e ogni risultato.</div>
+        <a href="mailto:phymap@protonmail.com?subject=Richiesta%20libro%20-%20Vol.%201" class="btn btn--outline">Richiedi il Volume 1</a>
+      </div>
+    </div>
+
+    <!-- Volume 2 -->
+    <div class="book-section reveal">
+      <div class="book-cover-wrap">
+        <img src="copertina-vol2.jpg" alt="Il Trader Imperfetto - Volume 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="book-cover-fallback" style="display:none;">
+          Carica la copertina su GitHub con il nome<br><strong style="color:var(--text); margin-top:6px; display:block;">copertina-vol2.jpg</strong>
+        </div>
+      </div>
+      <div>
+        <div class="book-vol-tag">Volume 2</div>
+        <h3 class="book-title">Il linguaggio del mercato</h3>
+        <div class="book-premise">Nel primo libro ho raccontato la battaglia interiore. Quello che succedeva nella mia testa quando i grafici andavano contro di me, quando la paura prendeva il controllo, quando sapevo esattamente cosa avrei dovuto fare e non riuscivo a farlo.
+
+Ma c'era un'altra storia che non avevo ancora raccontato.
+
+Mentre imparavo a gestire me stesso, stavo anche imparando a leggere il mercato. Due percorsi paralleli, due linguaggi da acquisire contemporaneamente, due guerre combattute sullo stesso campo di battaglia.
+
+Per anni ho creduto che il problema fossi solo io, le mie emozioni, i miei blocchi, la mia incapacità di seguire il piano. Poi ho capito che c'era anche un altro problema: non capivo davvero il mercato. Non nel senso profondo del termine. Lo guardavo, ma non lo vedevo.
+
+Questo secondo volume racconta quella scoperta. Non è un manuale tecnico. Non troverete formule magiche o strategie infallibili. Troverete il resoconto onesto di come ho imparato, anno dopo anno, a leggere un linguaggio complesso che nessun corso mi aveva insegnato davvero.</div>
+        <a href="mailto:phymap@protonmail.com?subject=Richiesta%20libro%20-%20Vol.%202" class="btn btn--outline">Richiedi il Volume 2</a>
+      </div>
+    </div>
+
+    <!-- Volume 3 -->
+    <div class="book-section reveal">
+      <div class="book-cover-wrap">
+        <img src="copertina-vol3.jpg" alt="Il Trader Imperfetto - Volume 3" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="book-cover-fallback" style="display:none;">
+          Carica la copertina su GitHub con il nome<br><strong style="color:var(--text); margin-top:6px; display:block;">copertina-vol3.jpg</strong>
+        </div>
+      </div>
+      <div>
+        <div class="book-vol-tag">Volume 3</div>
+        <h3 class="book-title">Quanto tempo ci vorrà ancora</h3>
+        <div class="book-premise">C'è una domanda che nessuno fa mai apertamente, ma che quasi tutti i trader si portano dentro come un peso silenzioso. Non è "quanto guadagnerai?". Non è "qual'è la tua strategia?". È qualcosa di più scomodo, più intimo, più difficile da ammettere anche a se stessi.
+
+Quanto tempo ci vorrà ancora?
+
+Quest'ultimo volume cerca di rispondere a questa domanda, raccontando quello che succede dopo il racconto dei primi due libri.</div>
+        <a href="mailto:phymap@protonmail.com?subject=Richiesta%20libro%20-%20Vol.%203" class="btn btn--outline">Richiedi il Volume 3</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ CTA ════════════════════════════════════════════════ -->
+<section class="tight">
+  <div class="container">
+    <div class="highlight-box text-center reveal" style="padding:56px;">
+      <h3 style="margin-bottom:16px;">Vuoi ricevere tutta la serie?</h3>
+      <p style="max-width:480px; margin:0 auto 28px;">
+        Scrivi una sola email indicando quali volumi desideri: ti verranno inviati gratuitamente in formato PDF.
+      </p>
+      <a href="mailto:phymap@protonmail.com?subject=Richiesta%20libri%20-%20Serie%20completa" class="btn btn--gold">
+        Richiedi la serie completa
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <h3>Phy<span>Map</span> Trading</h3>
+        <p>La fluidodinamica applicata ai mercati finanziari. Un approccio diverso, basato su liquidità, tempo e volume.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Navigazione</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="su-di-noi.html">Su di noi</a></li>
+          <li><a href="il-metodo.html">Il metodo</a></li>
+          <li><a href="software-e-formazione.html">Software &amp; Formazione</a></li>
+          <li><a href="phystudy-indicatori.html">Gli indicatori</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Social</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/phymaptrad/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://discord.gg/KTteTnSdq5" target="_blank" rel="noopener">Discord</a></li>
+          <li><a href="https://t.me/phymap" target="_blank" rel="noopener">Telegram</a></li>
+          <li><a href="https://www.youtube.com/@aldophymaptrading/videos" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Legale</h4>
+        <ul>
+          <li><a href="informazioni-legali.html">Informazioni legali</a></li>
+          <li><a href="dichiarazione-privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__copy">© 2025 <span>PhyMap Trading</span> — Gesualdo Landolina, P.IVA IT07421950820</div>
+      <div class="footer__legal">
+        <a href="informazioni-legali.html">Informazioni legali</a>
+        <a href="dichiarazione-privacy.html">Privacy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
