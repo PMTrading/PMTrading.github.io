@@ -5,7 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Il Metodo — PhyMap Trading</title>
   <meta name="description" content="Scopri le origini e il funzionamento del metodo PhyMap: fluidodinamica applicata ai mercati finanziari, sviluppato in 8 anni di ricerca." />
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    @media (max-width: 768px) {
+      .pdf-grid { grid-template-columns: 1fr !important; }
+      .pdf-grid > div:first-child { border-right: none !important; border-bottom: 1px solid var(--border); }
+    }
+  </style>
   <link rel="icon" href="favicon.ico" />
 </head>
 <body>
@@ -219,8 +224,84 @@
         <p style="margin-bottom:28px;">
           L'obiettivo non è fornire segnali rigidi o previsioni certe, ma offrire una lettura chiara del mercato, permettendo al trader di orientarsi e adattarsi al flusso.
         </p>
-        <a href="software-e-formazione.html" class="btn btn--primary">Scopri PhyStudy</a>
+        <div style="display:flex; gap:16px; flex-wrap:wrap;">
+          <a href="software-e-formazione.html" class="btn btn--primary">Scopri PhyStudy</a>
+        </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ═══ PDF GUIDE ════════════════════════════════════════ -->
+<section class="tight">
+  <div class="container">
+    <div class="reveal pdf-grid" style="background:linear-gradient(145deg, var(--surface), #0A0F14); border:1px solid var(--border-accent); border-radius:var(--radius); overflow:hidden; display:grid; grid-template-columns:1fr 1fr; align-items:stretch;">
+
+      <!-- Left: preview card -->
+      <div style="padding:48px; border-right:1px solid var(--border); display:flex; flex-direction:column; justify-content:center;">
+        <div style="background:var(--bg); border:1px solid var(--border); border-radius:var(--radius-sm); padding:36px; position:relative; max-width:320px;">
+          <!-- Top bar -->
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:24px;">
+            <div style="width:28px; height:28px; border:1.5px solid var(--accent); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:0.65rem; color:var(--accent); font-weight:700; flex-shrink:0;">PM</div>
+            <span style="font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-muted);">PhyMap Trading</span>
+          </div>
+          <!-- Title -->
+          <div style="font-family:'Cormorant Garamond',serif; font-size:1.6rem; font-weight:600; color:var(--text); line-height:1.2; margin-bottom:12px;">
+            Cos'è PhyMap.
+          </div>
+          <div style="font-family:'Cormorant Garamond',serif; font-size:1rem; font-style:italic; color:var(--text-muted); margin-bottom:24px; line-height:1.5;">
+            Te lo spiego come lo<br>spiegherei a un amico.
+          </div>
+          <!-- Chapter list -->
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <div style="font-size:0.72rem; color:var(--text-muted); letter-spacing:0.06em; text-transform:uppercase; margin-bottom:4px;">Contenuto</div>
+            <div style="display:flex; align-items:center; gap:8px; font-size:0.8rem; color:var(--text-dim);">
+              <span style="color:var(--accent); font-size:0.65rem;">▸</span> Il problema con il trading tradizionale
+            </div>
+            <div style="display:flex; align-items:center; gap:8px; font-size:0.8rem; color:var(--text-dim);">
+              <span style="color:var(--accent); font-size:0.65rem;">▸</span> Il mercato è un fluido
+            </div>
+            <div style="display:flex; align-items:center; gap:8px; font-size:0.8rem; color:var(--text-dim);">
+              <span style="color:var(--accent); font-size:0.65rem;">▸</span> Prezzo, tempo e volume
+            </div>
+            <div style="display:flex; align-items:center; gap:8px; font-size:0.8rem; color:var(--text-dim);">
+              <span style="color:var(--accent); font-size:0.65rem;">▸</span> Gli strumenti sul grafico
+            </div>
+            <div style="display:flex; align-items:center; gap:8px; font-size:0.8rem; color:var(--text-dim);">
+              <span style="color:var(--accent); font-size:0.65rem;">▸</span> Come si usa tutto questo
+            </div>
+            <div style="display:flex; align-items:center; gap:8px; font-size:0.8rem; color:var(--text-dim);">
+              <span style="color:var(--accent); font-size:0.65rem;">▸</span> Per chi è e per chi non è
+            </div>
+          </div>
+          <!-- PDF badge -->
+          <div style="position:absolute; top:16px; right:16px; background:var(--accent); color:#07070D; font-size:0.65rem; font-weight:700; letter-spacing:0.08em; padding:3px 8px; border-radius:4px;">PDF</div>
+        </div>
+      </div>
+
+      <!-- Right: description + CTA -->
+      <div style="padding:48px; display:flex; flex-direction:column; justify-content:center;">
+        <div class="section-label" style="margin-bottom:16px;">Guida introduttiva</div>
+        <h2 style="font-size:clamp(1.5rem,2.5vw,2rem); margin-bottom:16px;">
+          Capire PhyMap<br>in pochi minuti
+        </h2>
+        <p style="margin-bottom:16px; font-size:0.95rem;">
+          Otto anni di osservazione, migliaia di sessioni di mercato, un'idea che col tempo è diventata un metodo.
+        </p>
+        <p style="margin-bottom:32px; font-size:0.92rem; color:var(--text-muted);">
+          Una guida diretta — non un manuale, non un elenco di regole. Un racconto che spiega da dove viene PhyMap, cosa ci abbiamo visto dentro e perché può cambiare il modo in cui guardi un grafico.
+        </p>
+        <div>
+          <a href="guida-phymap.pdf" download="Guida_PhyMap.pdf" class="btn btn--primary" style="gap:10px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Scarica la guida gratuita
+          </a>
+          <p style="margin-top:12px; font-size:0.75rem; color:var(--text-muted);">PDF · 8 pagine · Gratuito</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
