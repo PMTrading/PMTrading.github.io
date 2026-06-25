@@ -241,44 +241,34 @@
     <div class="reveal pdf-grid" style="background:linear-gradient(145deg, var(--surface), #0A0F14); border:1px solid var(--border-accent); border-radius:var(--radius); overflow:hidden; display:grid; grid-template-columns:1fr 1fr; align-items:stretch;">
 
       <!-- Left: preview card -->
-      <div style="padding:48px; border-right:1px solid var(--border); display:flex; flex-direction:column; justify-content:center;">
-        <div style="background:var(--bg); border:1px solid var(--border); border-radius:var(--radius-sm); padding:36px; position:relative; max-width:320px;">
+      <div style="padding:48px; border-right:1px solid var(--border); display:flex; flex-direction:column; justify-content:center; align-items:center;">
+        <div style="background:linear-gradient(160deg,#0E1520,#07111A); border:1px solid rgba(78,155,184,0.25); border-radius:12px; padding:40px 36px; position:relative; width:100%; max-width:300px; box-shadow:0 20px 60px rgba(0,0,0,0.5);">
+          <!-- PDF badge -->
+          <div style="position:absolute; top:16px; right:16px; background:var(--accent); color:#07070D; font-size:0.62rem; font-weight:700; letter-spacing:0.1em; padding:3px 9px; border-radius:4px;">PDF</div>
           <!-- Top bar -->
-          <div style="display:flex; align-items:center; gap:8px; margin-bottom:24px;">
-            <div style="width:28px; height:28px; border:1.5px solid var(--accent); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:0.65rem; color:var(--accent); font-weight:700; flex-shrink:0;">PM</div>
-            <span style="font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-muted);">PhyMap Trading</span>
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:28px;">
+            <div style="width:26px; height:26px; border:1.5px solid var(--accent); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:0.6rem; color:var(--accent); font-weight:700; flex-shrink:0;">PM</div>
+            <span style="font-size:0.68rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent);">PhyMap Trading</span>
           </div>
           <!-- Title -->
-          <div style="font-family:'Cormorant Garamond',serif; font-size:1.6rem; font-weight:600; color:var(--text); line-height:1.2; margin-bottom:12px;">
+          <div style="font-family:'Cormorant Garamond',serif; font-size:1.8rem; font-weight:600; color:#FFFFFF; line-height:1.15; margin-bottom:10px;">
             Cos'è PhyMap.
           </div>
-          <div style="font-family:'Cormorant Garamond',serif; font-size:1rem; font-style:italic; color:var(--text-muted); margin-bottom:24px; line-height:1.5;">
+          <div style="font-family:'Cormorant Garamond',serif; font-size:1.05rem; font-style:italic; color:rgba(255,255,255,0.55); margin-bottom:28px; line-height:1.5;">
             Te lo spiego come lo<br>spiegherei a un amico.
           </div>
+          <!-- Divider -->
+          <div style="height:1px; background:rgba(78,155,184,0.2); margin-bottom:20px;"></div>
           <!-- Chapter list -->
-          <div style="display:flex; flex-direction:column; gap:8px;">
-            <div style="font-size:0.72rem; color:var(--text-muted); letter-spacing:0.06em; text-transform:uppercase; margin-bottom:4px;">Contenuto</div>
-            <div style="display:flex; align-items:center; gap:8px; font-size:0.8rem; color:var(--text-dim);">
-              <span style="color:var(--accent); font-size:0.65rem;">▸</span> Il problema con il trading tradizionale
-            </div>
-            <div style="display:flex; align-items:center; gap:8px; font-size:0.8rem; color:var(--text-dim);">
-              <span style="color:var(--accent); font-size:0.65rem;">▸</span> Il mercato è un fluido
-            </div>
-            <div style="display:flex; align-items:center; gap:8px; font-size:0.8rem; color:var(--text-dim);">
-              <span style="color:var(--accent); font-size:0.65rem;">▸</span> Prezzo, tempo e volume
-            </div>
-            <div style="display:flex; align-items:center; gap:8px; font-size:0.8rem; color:var(--text-dim);">
-              <span style="color:var(--accent); font-size:0.65rem;">▸</span> Gli strumenti sul grafico
-            </div>
-            <div style="display:flex; align-items:center; gap:8px; font-size:0.8rem; color:var(--text-dim);">
-              <span style="color:var(--accent); font-size:0.65rem;">▸</span> Come si usa tutto questo
-            </div>
-            <div style="display:flex; align-items:center; gap:8px; font-size:0.8rem; color:var(--text-dim);">
-              <span style="color:var(--accent); font-size:0.65rem;">▸</span> Per chi è e per chi non è
-            </div>
+          <div style="display:flex; flex-direction:column; gap:0;">
+            <div style="font-size:0.65rem; color:var(--accent); letter-spacing:0.12em; text-transform:uppercase; margin-bottom:12px; font-weight:600;">Contenuto</div>
+            <div style="font-size:0.82rem; color:rgba(255,255,255,0.75); padding:7px 0; border-bottom:1px solid rgba(255,255,255,0.06); display:flex; align-items:center; gap:10px;"><span style="color:var(--accent); flex-shrink:0; font-size:0.7rem;">01</span> Il problema con il trading tradizionale</div>
+            <div style="font-size:0.82rem; color:rgba(255,255,255,0.75); padding:7px 0; border-bottom:1px solid rgba(255,255,255,0.06); display:flex; align-items:center; gap:10px;"><span style="color:var(--accent); flex-shrink:0; font-size:0.7rem;">02</span> Il mercato è un fluido</div>
+            <div style="font-size:0.82rem; color:rgba(255,255,255,0.75); padding:7px 0; border-bottom:1px solid rgba(255,255,255,0.06); display:flex; align-items:center; gap:10px;"><span style="color:var(--accent); flex-shrink:0; font-size:0.7rem;">03</span> Prezzo, tempo e volume</div>
+            <div style="font-size:0.82rem; color:rgba(255,255,255,0.75); padding:7px 0; border-bottom:1px solid rgba(255,255,255,0.06); display:flex; align-items:center; gap:10px;"><span style="color:var(--accent); flex-shrink:0; font-size:0.7rem;">04</span> Gli strumenti sul grafico</div>
+            <div style="font-size:0.82rem; color:rgba(255,255,255,0.75); padding:7px 0; border-bottom:1px solid rgba(255,255,255,0.06); display:flex; align-items:center; gap:10px;"><span style="color:var(--accent); flex-shrink:0; font-size:0.7rem;">05</span> Come si usa tutto questo</div>
+            <div style="font-size:0.82rem; color:rgba(255,255,255,0.75); padding:7px 0; display:flex; align-items:center; gap:10px;"><span style="color:var(--accent); flex-shrink:0; font-size:0.7rem;">06</span> Per chi è e per chi non è</div>
           </div>
-          <!-- PDF badge -->
-          <div style="position:absolute; top:16px; right:16px; background:var(--accent); color:#07070D; font-size:0.65rem; font-weight:700; letter-spacing:0.08em; padding:3px 8px; border-radius:4px;">PDF</div>
         </div>
       </div>
 
@@ -322,13 +312,13 @@
     <div class="grid-2" style="gap:40px;">
       <div class="reveal">
         <div class="video-wrapper">
-          <iframe src="https://www.youtube-nocookie.com/embed/tH7bzPUgmA4?start=36" title="PhyStudy tutorial - Come leggere le ADR" allowfullscreen loading="lazy"></iframe>
+          <iframe src="https://www.youtube-nocookie.com/embed/tH7bzPUgmA4?start=36" title="PhyMap Level - I livelli dinamici di espansione del prezzo" allowfullscreen loading="lazy"></iframe>
         </div>
         <div class="video-caption">PhyStudy tutorial — Come leggere le ADR: i livelli chiave del mercato</div>
       </div>
       <div class="reveal reveal-delay-2">
         <div class="video-wrapper">
-          <iframe src="https://www.youtube-nocookie.com/embed/q8pTIWaQnWw?start=98" title="PhyMap Level - I livelli dinamici di espansione del prezzo" allowfullscreen loading="lazy"></iframe>
+          <iframe src="https://www.youtube-nocookie.com/embed/q8pTIWaQnWw?start=98" title="PhyStudy tutorial - Come leggere le ADR" allowfullscreen loading="lazy"></iframe>
         </div>
         <div class="video-caption">PhyMap Level — I livelli dinamici di espansione del prezzo. PhyStudy Ep.2</div>
       </div>
