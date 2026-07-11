@@ -3,7 +3,15 @@
    Dark luxury financial aesthetic · Fluid dynamics theme
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap');
+@font-face {
+  font-family: 'DaysOne';
+  src: url('DaysOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap');
 
 /* ─── Design Tokens ─────────────────────────────────────── */
 :root {
@@ -44,15 +52,15 @@ ul { list-style: none; }
 
 /* ─── Typography ─────────────────────────────────────────── */
 h1, h2, h3, h4 {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 500;
+  font-family: 'DaysOne', sans-serif;
+  font-weight: 400;
   line-height: 1.15;
   letter-spacing: -0.01em;
 }
-h1 { font-size: clamp(2.4rem, 5vw, 4.2rem); font-weight: 300; }
-h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); }
-h3 { font-size: clamp(1.3rem, 2.5vw, 1.8rem); }
-h4 { font-size: 1.15rem; font-weight: 600; font-family: 'Outfit', sans-serif; }
+h1 { font-size: clamp(2rem, 4vw, 3.4rem); }
+h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); }
+h3 { font-size: clamp(1.1rem, 2vw, 1.5rem); }
+h4 { font-size: 1rem; font-family: 'Outfit', sans-serif; font-weight: 600; }
 p  { color: var(--text-dim); font-size: 1rem; line-height: 1.8; }
 
 .accent-text  { color: var(--accent); }
@@ -104,7 +112,7 @@ section.tight { padding: 60px 0; }
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'DaysOne', sans-serif;
   font-size: 1.35rem;
   font-weight: 600;
   letter-spacing: 0.04em;
@@ -387,7 +395,7 @@ section.tight { padding: 60px 0; }
   margin-bottom: 8px;
 }
 .pricing-name {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'DaysOne', sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
   color: var(--text);
@@ -399,7 +407,7 @@ section.tight { padding: 60px 0; }
   margin-bottom: 24px;
 }
 .pricing-price {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'DaysOne', sans-serif;
   font-size: 3rem;
   font-weight: 600;
   color: var(--text);
@@ -628,7 +636,7 @@ section.tight { padding: 60px 0; }
 }
 .stat { }
 .stat__num {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'DaysOne', sans-serif;
   font-size: 2.8rem;
   font-weight: 300;
   color: var(--text);
@@ -639,7 +647,7 @@ section.tight { padding: 60px 0; }
 
 /* ─── Contact Section ─────────────────────────────────────── */
 .contact-email {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'DaysOne', sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   color: var(--accent);
@@ -761,7 +769,7 @@ footer {
   margin-bottom: 32px;
 }
 .footer__brand h3 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'DaysOne', sans-serif;
   font-size: 1.3rem;
   font-weight: 500;
   margin-bottom: 12px;
