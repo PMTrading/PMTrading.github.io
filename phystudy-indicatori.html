@@ -39,8 +39,7 @@
     .tag-opzioni    { background: rgba(130,100,200,0.12); color: #9B7FD4; }
     .tag-tools      { background: rgba(80,180,120,0.12); color: #50B478; }
     .indicator-name {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       font-weight: 500;
       color: var(--text);
       margin-bottom: 12px;
@@ -92,16 +91,14 @@
 <nav class="nav">
   <div class="nav__inner">
     <a href="index.html" class="nav__logo">
-      <div class="logo-mark">PM</div>
-      Phy<span>Map</span> Trading
+      <img src="Logo_Affiancato.png" alt="PhyMap Trading" class="nav__logo-img" />
     </a>
     <div class="nav__links">
       <a href="index.html">Home</a>
       <a href="su-di-noi.html">Su di noi</a>
       <a href="il-metodo.html">Il metodo</a>
       <a href="software-e-formazione.html">Software &amp; Formazione</a>
-      <a href="phystudy-indicatori.html">Gli indicatori</a>
-      </div>
+      <a href="phystudy-indicatori.html" class="active">Gli indicatori</a>
       <a href="contatti.html" class="nav__cta">Contatti</a>
     </div>
     <button class="nav__toggle" aria-label="Menu">
@@ -143,7 +140,6 @@
       </div>
       <div class="reveal reveal-delay-2">
         <div class="phystudy-img-wrap">
-          <!-- Carica l'immagine del pannello PhyStudy su GitHub con il nome "phystudypro.png" -->
           <img src="phystudypro.png" alt="Pannello PhyStudy Pro" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
           <div style="display:none; padding:40px 20px; color:var(--text-muted); font-size:0.85rem;">
             Carica l'immagine del pannello PhyStudy su GitHub con il nome <strong style="color:var(--text);">phystudypro.png</strong>
@@ -169,7 +165,6 @@
 
     <div class="indicator-grid">
 
-      <!-- ADR Giornaliera -->
       <div class="indicator-card reveal">
         <div class="indicator-tag tag-volumetria">Volumetria · Struttura</div>
         <div class="indicator-name">ADR Giornaliera</div>
@@ -181,7 +176,6 @@
         </ul>
       </div>
 
-      <!-- ADR Weekly -->
       <div class="indicator-card reveal reveal-delay-1">
         <div class="indicator-tag tag-volumetria">Volumetria · Settimanale</div>
         <div class="indicator-name">ADR Weekly</div>
@@ -192,7 +186,6 @@
         </ul>
       </div>
 
-      <!-- PhyMap Level -->
       <div class="indicator-card reveal">
         <div class="indicator-tag tag-opzioni">Opzioni · Intraday</div>
         <div class="indicator-name">PhyMap Level</div>
@@ -204,7 +197,6 @@
         </ul>
       </div>
 
-      <!-- Cicli FIXED -->
       <div class="indicator-card reveal reveal-delay-1">
         <div class="indicator-tag tag-cicli">Ciclica · Temporale</div>
         <div class="indicator-name">Cicli FIXED</div>
@@ -216,7 +208,6 @@
         </ul>
       </div>
 
-      <!-- Livelli mensili OPT -->
       <div class="indicator-card reveal">
         <div class="indicator-tag tag-opzioni">Opzioni · Mensile</div>
         <div class="indicator-name">Livelli mensili OPT</div>
@@ -227,7 +218,6 @@
         </ul>
       </div>
 
-      <!-- Indicatore VAR -->
       <div class="indicator-card reveal reveal-delay-1">
         <div class="indicator-tag tag-opzioni">Opzioni · Flussi</div>
         <div class="indicator-name">Indicatore VAR</div>
@@ -238,7 +228,6 @@
         </ul>
       </div>
 
-      <!-- VPhy -->
       <div class="indicator-card reveal">
         <div class="indicator-tag tag-volumetria">Volumetria · Microstruttura</div>
         <div class="indicator-name">VPhy</div>
@@ -250,7 +239,6 @@
         </ul>
       </div>
 
-      <!-- Volume Profile 0DTE -->
       <div class="indicator-card reveal reveal-delay-1">
         <div class="indicator-tag tag-opzioni">Opzioni · 0DTE</div>
         <div class="indicator-name">Volume Profile 0DTE</div>
@@ -261,7 +249,6 @@
         </ul>
       </div>
 
-      <!-- Unusual Options -->
       <div class="indicator-card reveal">
         <div class="indicator-tag tag-opzioni">Opzioni · Anomalie</div>
         <div class="indicator-name">Unusual Options</div>
@@ -273,7 +260,6 @@
         </ul>
       </div>
 
-      <!-- Convex -->
       <div class="indicator-card reveal reveal-delay-1">
         <div class="indicator-tag tag-opzioni">Opzioni · Equilibrio</div>
         <div class="indicator-name">Convex</div>
@@ -284,7 +270,6 @@
         </ul>
       </div>
 
-      <!-- Delta G -->
       <div class="indicator-card reveal">
         <div class="indicator-tag tag-opzioni">Opzioni · Gamma</div>
         <div class="indicator-name">Delta G</div>
@@ -295,7 +280,6 @@
         </ul>
       </div>
 
-      <!-- Wayv -->
       <div class="indicator-card reveal reveal-delay-1">
         <div class="indicator-tag tag-tools">Visualizzazione</div>
         <div class="indicator-name">Wayv</div>
@@ -306,7 +290,6 @@
         </ul>
       </div>
 
-      <!-- PhyMap HeartBeat -->
       <div class="indicator-card reveal">
         <div class="indicator-tag tag-tools">Gestione · Licenze</div>
         <div class="indicator-name">PhyMap HeartBeat</div>
@@ -317,7 +300,6 @@
         </ul>
       </div>
 
-      <!-- PhyTools -->
       <div class="indicator-card reveal reveal-delay-1">
         <div class="indicator-tag tag-tools">Operatività · Alert</div>
         <div class="indicator-name">PhyTools</div>
