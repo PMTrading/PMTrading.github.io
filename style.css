@@ -699,11 +699,10 @@ section.tight { padding: 60px 0; }
   height: 280px;
 }
 .hero__logo-img {
-  width: 340px;
+  width: 420px;
   max-width: 100%;
   position: relative;
   z-index: 1;
-  filter: drop-shadow(0 0 40px rgba(78,155,184,0.45)) drop-shadow(0 0 80px rgba(78,155,184,0.15));
 }
 
 @media (max-width: 900px) {
